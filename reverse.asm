@@ -1,6 +1,7 @@
 section .text
 	global _start
 
+_start:
 ; Setting up the socket
 	xor ebx, ebx			; set the register ebx to 0
 	mul ebx					; The result of the multiplication is stocked in eax and ebx
