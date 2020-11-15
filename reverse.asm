@@ -33,6 +33,7 @@ _start:
 	
 	mov ecx, esp				; keep first arg address in ecx
 	push byte 0x10				; push the ip address length
+	push ecx
 	push edi				; push file descriptor saved before
 	mov ecx, esp				; reassign all the arg in ecx
 	int 80h					; syscall
